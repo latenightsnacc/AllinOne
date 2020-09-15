@@ -1,0 +1,39 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body {
+    overflow: hidden;
+}
+
+.sidebar, .wrapper {
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: $blue;
+
+      
+}
+.wrapper {
+    background-color: $grey;
+}
+.greyBs {
+    background-color: $grey;
+    box-shadow: $bsGrey;
+    border-radius: $borderR;
+}
+.cardNew{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+}

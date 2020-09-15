@@ -1,0 +1,30 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body{
+    position: relative;
+    display: flex;
+    
+}
+.sidebar, .wrapper {
+    height: 100vh;
+
+
+}
+
+.sidebar {
+    background-color: $blue;
+    width: 20%;
+    position: fixed;
+}
+.wrapper {
+    background-color: $grey;
+    width: 80%;
+}
