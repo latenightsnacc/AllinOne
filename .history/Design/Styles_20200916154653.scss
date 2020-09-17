@@ -1,0 +1,100 @@
+@import 'variables';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+body, html {
+    overflow-x: hidden;
+    position: relative;
+    background-color: $grey;
+}
+
+.sidebar, .wrapper {
+    min-height: 100vh;
+}
+
+.sidebar {
+    background-color: $blue;
+    position: fixed;
+    width: 200px;
+
+      
+}
+.side-menu {
+    margin-top: 50px;
+    .side-link{
+        background-color: $blue;
+        font-family: $fontNoto;
+        margin: 10px 2px;
+        padding: 7px;
+        border-radius: 50px;
+                box-shadow: $bsBlue;
+        a{
+            color: $dark;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            align-items: center;     
+            
+        }
+        .active, a:hover {
+            color: $grey;
+        }
+        
+        
+    }
+    
+}
+.wrapper {
+    background-color: $grey;
+    margin-left: 100px;
+}
+.greyBs {
+    background-color: $grey;
+    box-shadow: $bsGrey;
+    border-radius: $borderR;
+    color: $blue;
+}
+.cardNew{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    position: relative;
+
+    .card-top {
+        position: absolute;
+        top:-60px;
+        left: 75px;
+        width: 100px;
+        height: 100px;
+        background-color: $blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+        color: $grey;
+    }
+
+}
+.card-title {
+    font-family: $fontNoto;
+    font-size: 20px;
+    color: black;
+}
+.biz-title {
+    font-family: $fontRoboto;
+    font-size: 50px;
+    color: $blue;
+}
+
+a {
+    text-decoration: none;
+}

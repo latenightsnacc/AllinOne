@@ -1,0 +1,117 @@
+@import 'variables';
+
+*,*:before,*:after {
+	box-sizing: border-box;
+}
+
+:after {
+	content: "";
+}
+
+body, html {
+    background: $grey;
+    overflow-x: hidden;
+}
+.wrapper {
+    min-height:100vh;
+    margin-left: 100px;
+}
+a.sidebar-icon {
+    color: $grey;
+    font-size: 50px;
+}
+.side-bar {
+  float: left;
+	position: fixed;
+	top: 100;
+  left: 0;
+	background: transparent;
+}
+
+.side-bar ul {
+	text-align: center;
+}
+
+.side-bar ul li {
+	position: relative;
+  width: 100px;
+  cursor: pointer;
+	background: $blue;
+	text-transform: uppercase;
+	transition:all .4s ease-out;
+}
+
+.side-bar ul li:after {
+	position: absolute;
+	background: $grey;
+	color: $blue;
+	top:0;
+	left: 100px;
+	width: 100px; height: 100%;
+  opacity:.5;
+  transform: perspective(400px) rotateY(90deg);
+	transform-origin: 0 100%;
+	transition:all .4s ease-out;
+}
+
+.side-bar ul li:nth-child(1):after { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: "Dashboard";
+	line-height: 88px;
+}
+.side-bar ul li:nth-child(2):after { 
+    content: "Profile";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	line-height: 88px;
+}
+.side-bar ul li:nth-child(3):after { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	content: "Finance";
+	line-height: 85px;
+}
+.side-bar ul li:nth-child(4):after { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	content: "CMS";
+	line-height: 70px;
+}
+.side-bar ul li:nth-child(5):after { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	content: "Settings";
+	line-height: 70px;
+}
+.side-bar ul li:nth-child(6):after { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	content: "Help";
+	line-height: 70px;
+}
+
+.side-bar ul li:hover {
+	transform: translateX(-100px);
+}
+
+.side-bar ul li:hover:after {
+  opacity: 1;
+	transform: perspective(400px) rotateY(0deg) scale(1) ;
+}
+
+
+.side-bar ul li > div {
+	display: inline-block;
+	padding: 25px 0;
+	background: transparent;
+}
+
+.side-bar ul li div { position: relative; }
+
