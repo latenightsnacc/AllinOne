@@ -100,8 +100,16 @@ body, html {
 }
 
 a.sidebar-icon {
-  color: #f6f3ed;
+  color: black;
   font-size: 50px;
+}
+
+a.sidebar-icon:hover {
+  color: #f6f3ed;
+}
+
+a.active {
+  color: #f6f3ed;
 }
 
 .side-bar {
@@ -225,6 +233,20 @@ a.sidebar-icon {
       -ms-flex-pack: center;
           justify-content: center;
   content: "Help";
+  line-height: 70px;
+}
+
+.side-bar ul li:nth-child(7):after {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  content: "Log out";
   line-height: 70px;
 }
 

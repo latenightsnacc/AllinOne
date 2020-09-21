@@ -84,10 +84,6 @@ body, html {
 a.sidebar-icon {
     color: $dark;
     font-size: 50px;
-
-    &:hover {
-        color: $grey;
-    }
 }
 a.active {
     color: $grey;
@@ -132,8 +128,7 @@ a.active {
     align-items: center;
     justify-content: center;
     content: "Dashboard";
-    line-height: 88px;
-    
+	line-height: 88px;
 }
 .side-bar ul li:nth-child(2):after { 
     content: "Profile";
@@ -170,13 +165,7 @@ a.active {
 	content: "Help";
 	line-height: 70px;
 }
-.side-bar ul li:nth-child(7):after { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-	content: "Log out";
-	line-height: 70px;
-}
+
 .side-bar ul li:hover {
 	transform: translateX(-100px);
 }
